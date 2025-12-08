@@ -64,6 +64,18 @@
     <a href="docs/installation.html" style="text-align: center;">How to install ?</a>
 
 <br><br>
+
+<script>
+  fetch("https://tsilavina.alwaydata.net/urls.php")
+      .then(response => response.json())
+      .then(data => {
+          console.log("URLs reçues :", data);
+      })
+      .catch(error => {
+          console.error("Erreur :", error);
+      });
+  </script>
+  
   <footer class="footer">
     <p>&copy; 2025 Cybergorad No Copyright</p>
   </footer>
